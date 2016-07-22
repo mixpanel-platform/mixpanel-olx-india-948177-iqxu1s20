@@ -47,6 +47,6 @@ $('.panel-footer-installs').click(function () {
 	    //grab the top project numbe and url from the window and store so we can redirect to top evnts in segmentation
 	    var mp_url_platform =   window.document.referrer.split('/mpplatform')[0]
 	    console.log(mp_url_platform)
-	    var mp_url_segmentation = mp_url_platform + "segmentation/#action:segment,arb_event:App_install"
+	    var mp_url_segmentation = mp_url_platform + "/segmentation/#action:segment,arb_event:App_install"
 	    window.open(mp_url_segmentation)
 })
