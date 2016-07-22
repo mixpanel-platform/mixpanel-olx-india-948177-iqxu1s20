@@ -44,3 +44,37 @@
     font-size: 90%;
     font-size: 1vw;
 }
+/*re-style selctor so that drop down options are't hidden*/
+.mixpanel-platform-chart_header .mixpanel-platform-multi_selector .title, .mixpanel-platform-chart_header .mixpanel-platform-multi_selector .color_toggle_label .checkbox, .mixpanel-platform-chart_header .mixpanel-platform-multi_selector .color_circle {
+    vertical-align: top;
+}
+.mixpanel-platform-chart_header .mixpanel-platform-multi_selector .color_circle {
+    vertical-align: middle;
+}
+.checkbox, .radio {
+    position: relative;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.mixpanel-platform-chart_header .mixpanel-platform-multi_selector .color_toggle_label{
+    background-color: #fff;
+}
+
+.mixpanel-platform-chart_header .mixpanel-platform-multi_selector.filled{
+    background-color: #fff;
+    box-shadow: inset 0 -1px #fff;
+}
+.mixpanel-platform-chart_header{
+    background-color: #fff;
+}
+.mixpanel-platform-multi_selector {
+    background-color: #fff;
+}
+.mixpanel-platform-chart_header .mixpanel-platform-multi_selector .color_toggle_label{
+    box-shadow: inset 0 -1px #fff;
+}
+.mixpanel-platform-chart_header .mixpanel-platform-multi_selector .color_toggle_dropdown:not(:first-child) .color_toggle_label{
+    box-shadow: inset 0 -1px #fff;
+}
+/*end of re-styling of chart dropdowns*/
