@@ -78,3 +78,14 @@
     box-shadow: inset 0 -1px #fff;
 }
 /*end of re-styling of chart dropdowns*/
+
+/*hide legend on mpChart for style reasons*/
+#dau-chart .mixpanel-platform-multi_selector, #mau-chart .mixpanel-platform-multi_selector, #avg-events-per-user-per-day-chart .mixpanel-platform-multi_selector {
+    display: none;
+}
+
+.mixpanel-platform-chart_header{
+    height: 75px;
+    border-radius: 0px;
+}
+/*end hiding of legend*/
