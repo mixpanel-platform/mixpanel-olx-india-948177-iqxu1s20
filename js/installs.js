@@ -10,7 +10,9 @@ MP.api.segment('App_install', params).done(function(installsResults) {
     //store results of install data for the last month
     var installs = installsResults.values()
     // get just today's installs for header panel
-    var todaysInstalls = addCommas(installs.App_install[params.to.format("YYYY-MM-DD")])
+    console.log("params", moment().format("YYYY-MM-DD"))
+    var today = moment().format("YYYY-MM-DD")
+    var todaysInstalls = addCommas(installs.App_install[today])
     // replace text in header pannel to show today's installs
     $('#installs-today').text(todaysInstalls)
 
