@@ -15,7 +15,7 @@ MP.api.segment('App_install', params).done(function(installsResults) {
     $('#installs-today').text(todaysInstalls)
 
     //graph monthly data using MPChart
-    var newInstalls = $('#new-installs').MPChart({chartType: 'line'});   //create the chart and attach to the new installs data                            
+    var newInstalls = $('#new-installs-chart').MPChart({chartType: 'line'});   //create the chart and attach to the new installs data                            
     newInstalls.MPChart('setData', installsResults.values()); // Set the chart's data
     $("#new-installs").show()           //display chart header
 
