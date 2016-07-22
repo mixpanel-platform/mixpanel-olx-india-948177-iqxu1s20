@@ -19,12 +19,7 @@ var mauQuery = function(){
         })
        mauData.MAUs = MAUs
 
-      var mauChart = $('#mau-chart').MPChart({chartType: 'line', highchartsOptions: {
-        legend: {
-          enabled: true,
-          y: -7
-        }
-      }});                                // Create a line chart
+      var mauChart = $('#mau-chart').MPChart({chartType: 'line'});            // Create a line chart
       mauChart.MPChart('setData', mauData); // Set the chart's data
       $('#mau-chart-header').show()        //display chart header
       $('#loading-container').hide()      //hide the loading icon

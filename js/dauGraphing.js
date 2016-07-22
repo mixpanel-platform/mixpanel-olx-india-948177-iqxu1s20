@@ -17,12 +17,7 @@ var dauQuery = function(){
       })
      dauData.DAUs = DAUs
 
-    var mdauChart = $('#dau-chart').MPChart({chartType: 'line', highchartsOptions: {  // Create a line chart
-      legend: {
-        enabled: true,
-        y:-7
-      },
-    }});                                
+    var mdauChart = $('#dau-chart').MPChart({chartType: 'line'});   //graph the line chart                             
     mdauChart.MPChart('setData', dauData); // Set the chart's data
     $("#dau-chart-header").show()           //display chart header
     $('#loading-container').hide()          //hide loading image
